@@ -13,8 +13,9 @@
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
     "zip": "bestzip Archive.zip .",
-    "deploy": "eb create --sample p3-api-dev && npm run build && eb list && eb use p3-api-dev && eb deploy",
-    "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && npm run zip && cd ..",
+    "eb:create":" cd www && sh /bin/deploy.sh",
+    "deploy": "npm run build && npm run eb:create",
+    "build": "npm install . && npm run clean && tsc && cp -rf src/bin www/bin && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && npm run zip && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
