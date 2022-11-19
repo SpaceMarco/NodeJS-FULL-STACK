@@ -14,7 +14,7 @@
     "clean": "rm -rf www/ || true",
     "zip": "bestzip Archive.zip .",
     "eb:create":" cd www && sh /bin/deploy.sh",
-    "deploy": "npm run build && npm run eb:create",
+    "deploy": "cd udagram/udagram-api && eb init p3-api --platform node.js-14 --region us-east-1 && cd ../../ && npm run build && npm run eb:create",
     "build": "npm install . && npm run clean && tsc && cp -rf src/bin www/bin && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && npm run zip && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
