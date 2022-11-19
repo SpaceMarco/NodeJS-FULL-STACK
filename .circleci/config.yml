@@ -40,13 +40,17 @@ jobs:
           name: Front-End Build
           command: |
             npm run frontend:build
-            cd udagram/udagram-api
-            npm  update
-            cd ../../
       # TODO: Build the backend API      
       - run:
           name: API Build
           command: |
+            cd udagram/udagram-api
+            npm  uninstall @types/validator
+            npm install @types/validator -D
+            npm  uninstall @types/sequelize
+            npm install @types/sequelize -D
+            cd ../../
+            
             npm run api:build
   # deploy step will run only after manual approval
   deploy:
