@@ -43,8 +43,7 @@ jobs:
             npm install @types/validator -D
             npm run frontend:build
             cd udagram/udagram-api
-            npm  uninstall @types/validator
-            npm install @types/validator -D
+            npm  update
             cd ../../
       # TODO: Build the backend API      
       - run:
