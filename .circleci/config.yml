@@ -67,6 +67,12 @@ jobs:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
           command: |
+            cd udagram/udagram-api
+            npm  uninstall @types/validator
+            npm install @types/validator -D
+            npm  uninstall @types/sequelize
+            npm install @types/sequelize -D
+            cd ../../
             npm run deploy
             
 workflows:
