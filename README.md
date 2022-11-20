@@ -1,11 +1,13 @@
 # NodeJS udagram FULL-STACK application
 
 Application [Link](http://899113371307-bucket-udagram.s3-website-us-east-1.amazonaws.com/)
+Backend [Link](http://p3-api-dev.eba-pic3pg5h.us-east-1.elasticbeanstalk.com/)
 
 ## Dependencies
 All packages can be found at:
 > udagram/udagram-api/packages.json</br>
 > udagram/udagram-frontend/packages.json </br>
+use **npm** to install dependencies!
 
 ## Infrastructure
 this app requires the following services:
