@@ -31,7 +31,14 @@ CircleCI tracks the main branch and pushing on the branch will:</br>
 
   2- deploy the backend and frontend on AWS.</br></br>
   
-  ![image](https://user-images.githubusercontent.com/60396165/202921629-4aa536e5-4986-42c3-b6b5-cb04ba24d37b.png)
+  ![image](https://user-images.githubusercontent.com/60396165/202921629-4aa536e5-4986-42c3-b6b5-cb04ba24d37b.png)</br>
+
+ ## Diagrams:
+ 
+  Infrastructure:</br>
+  ![infrastructure drawio (3)](https://user-images.githubusercontent.com/60396165/202923782-65837b41-c24c-490a-9bb1-0d0db91318df.png)</br>
+  CircleCI:</br>
+  ![infrastructure drawio (5)](https://user-images.githubusercontent.com/60396165/202924540-2a2e0766-a3ed-4ff3-878c-22dd157a9803.png)</br>
 
   
   ## Screenshots:
